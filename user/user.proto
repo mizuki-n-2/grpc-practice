@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option go_package = "./";
+
+message User {
+  uint32 id = 1;
+  string name = 2;
+  string email = 3;
+  enum UserType {
+    NORMAL = 0;
+    ADMIN = 1;
+    GUEST = 2;
+    DISABLED = 3;
+  }
+  UserType user_type = 4;
+}
+
+message UserRequest {
+  uint32 id = 1;
+}
+
+message UserResponse {
+  bool error = 1;
+  string message = 2;
+  User user = 3;
+}
+
+service UserManager {
+  rpc get (UserRequest) returns (UserResponse) {}
+}

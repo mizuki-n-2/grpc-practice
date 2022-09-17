@@ -1,0 +1,18 @@
+{
+  "1": { "id": 1,
+  "name": "admin",
+  "email": "admin@example.com",
+  "user_type": "ADMINISTRATOR" },
+  "2": { "id": 2,
+    "name": "guest",
+    "email": "guest@example.com",
+    "user_type": "GUEST" },
+  "3": { "id": 3,
+    "name": "foo",
+    "email": "foo@example.com",
+    "user_type": "NORMAL" },
+  "4": { "id": 4,
+    "name": "troll",
+    "email": "troll@example.com",
+    "user_type": "DISABLED" }
+}
